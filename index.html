@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's switch the country!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+		<style type="text/css">
+			#myimg {position: absolute; top: 200px; margin-left: 400px; z-index: 998;}
+			#hand {position: absolute; top: 250px; margin-left: 170px; z-index: 999;}
+			#z9 {position: absolute; top: 250px; margin-left: 250px; opacity: 0; background: url('zigu.GIF'); background-size: 100% auto; width: 500px;}
+			#mybody{background-repeat: no-repeat;background-size: 100% auto;}
+			body {background: black;}
+			#e {position: absolute; opacity: 0; border-radius: 50%; display: inline-block; box-shadow: 10px 10px black; margin-left: 580px; width: 350px; top: 0px;}
+			#f{position: absolute; opacity: 0; width: 200px; top: 0px;}
+			#h{position: absolute; opacity: 0; width: 150px; top: 250px; margin-left: 1300px;}
+			#hu{position: absolute; opacity: 0; width: 150px; top: 250px; margin-left: 100px;}
+			#hp{position: absolute; opacity: 0; width: 150px; top: 250px; margin-left: 700px;}
+			#hs{position: absolute; opacity: 0; width: 150px; top: 450px; margin-left: 700px;}
+			#p{position: absolute; opacity: 0; }
+			#paris{position: absolute; opacity: 0; top: 400px; margin-left: 500px; border-radius: 50%; display: inline-block; box-shadow: 10px 10px black;}
+			#usa{position: absolute; opacity: 0; top: 250px; margin-left: 100px; border-radius: 50%; display: inline-block; box-shadow: 10px 10px black;}
+			#uk{position: absolute; opacity: 0; top: 250px; margin-left: 1000px; width: 500px; border-radius: 50%; display: inline-block; box-shadow: 10px 10px black;}
+			#seoul{position: absolute; opacity: 0; top: 380px; margin-left: 500px; border-radius: 50%; display: inline-block;  width: 450px}
+
+			p {font-family: 'Roboto Mono', monospace; font-size: 15pt; color: white; text-align: center; font-style: bold;}
+			#sen { margin-top: 120px;}
+			#ten { margin-top: 120px; opacity: 0;}
+			#hiseoul { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
+			#hiuk { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
+			#hiusa { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
+			#hiparis { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
+
+
+
+@keyframes plane {
+	from {top: 450px;}
+	to {top: 0px; margin-left: 1250px; }
+	}
+		</style>
+
+</head>
+
+<body id="mybody">
+	<p id="sen">Click This Globe</p>
+	<img src="globe2.GIF" id="myimg">
+	<img src="hand.GIF" id="hand">
+	<img src="zigu.GIF" id="z9">
+	<img src="eye.GIF" id="e">
+	<img src="farr.GIF" id="f">
+	<img src="isuk.GIF" id="h">
+	<img src="isusa.GIF" id="hu">
+	<img src="isparis.GIF" id="hp">
+	<img src="isseoul.GIF" id="hs">
+
+	<p id="ten">Click Anywhere You Want To Go</p>
+	<p id="hiuk">Hello, Welcome to England</p>
+	<p id="hiusa">Hello, Welcome to America</p>
+	<p id="hiparis">Hello, Welcome to Paris</p>
+	<p id="hiseoul">Hello, Welcome to Seoul City</p>
+	<img src="plane.GIF" id="p">
+	<img src="uk.GIF" id="uk">
+	<img src="usa.GIF" id="usa">
+	<img src="paris.GIF" id="paris">
+	<img src="seoul.GIF" id="seoul">
+
+	<audio id="mysound" loop>
+  	<source src="spinning.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="air">
+  	<source src="air.wav" type="audio/mpeg">
+	</audio>
+
+		<script type="text/javascript">
+		mysound.play();
+		</script>
+
+		<script type="text/javascript">
+			myimg.onclick = function(){
+				myimg.style.opacity = "0";
+				myimg.style.zIndex = "0";
+				mybody.style.background = "url('zigu.GIF')";
+				mybody.style.backgroundSize = "100% auto";
+				mysound.pause();
+				air.play();
+				hand.style.opacity = "0";
+				e.style.opacity = "2";
+				f.style.opacity = "2";
+				h.style.opacity = "2";
+				h.style.zIndex = "999";
+				hu.style.opacity = "2";
+				hu.style.zIndex = "999";
+				hp.style.opacity = "2";
+				hp.style.zIndex = "999";
+				hs.style.opacity = "2";
+				hs.style.zIndex = "999";
+				p.style.opacity = "2";
+				p.style.animation = "plane 6s  infinite";
+				uk.style.opacity = "0";
+				paris.style.opacity = "0";
+				usa.style.opacity = "0";
+				seoul.style.opacity = "0";
+				sen.style.opacity = "0";
+				ten.style.opacity = "2";
+				
+			}
+		</script>
+
+		<script type="text/javascript">
+			h.onclick = function(){
+				e.style.opacity = "0";
+				f.style.opacity = "2";
+				h.style.opacity = "0";
+				p.style.opacity = "0";
+				uk.style.opacity = "2";
+				paris.style.opacity = "0";
+				usa.style.opacity = "0";
+				hu.style.opacity = "2";
+				hp.style.opacity = "2";
+				hs.style.opacity = "2";
+				seoul.style.opacity = "0";
+				ten.style.opacity = "0";
+				hiuk.style.opacity = "2";
+				hiparis.style.opacity = "0";
+				
+				hiusa.style.opacity = "0";
+				hiseoul.style.opacity = "0";
+				}
+		</script>
+
+		<script type="text/javascript">
+			hu.onclick = function(){
+				e.style.opacity = "0";
+				f.style.opacity = "2";
+				h.style.opacity = "2";
+				p.style.opacity = "0";
+				uk.style.opacity = "0";
+				paris.style.opacity = "0";
+				usa.style.opacity = "2";
+				hu.style.opacity = "0";
+				hp.style.opacity = "2";
+				hs.style.opacity = "2";
+				seoul.style.opacity = "0";
+				ten.style.opacity = "0";
+				hiusa.style.opacity = "2";
+				hiparis.style.opacity = "0";
+				hiuk.style.opacity = "0";
+			
+				hiseoul.style.opacity = "0";
+				}
+		</script>
+
+		<script type="text/javascript">
+			hp.onclick = function(){
+				e.style.opacity = "0";
+				f.style.opacity = "2";
+				h.style.opacity = "2";
+				p.style.opacity = "0";
+				uk.style.opacity = "0";
+				paris.style.opacity = "2";
+				usa.style.opacity = "0";
+				hu.style.opacity = "2";
+				hp.style.opacity = "0";
+				hs.style.opacity = "2";
+				seoul.style.opacity = "0";
+				ten.style.opacity = "0";
+				hiparis.style.opacity = "2";
+
+				hiuk.style.opacity = "0";
+				hiusa.style.opacity = "0";
+				hiseoul.style.opacity = "0";
+				}
+		</script>
+
+		<script type="text/javascript">
+			hs.onclick = function(){
+				e.style.opacity = "0";
+				f.style.opacity = "2";
+				h.style.opacity = "2";
+				p.style.opacity = "0";
+				uk.style.opacity = "0";
+				paris.style.opacity = "0";
+				usa.style.opacity = "0";
+				hu.style.opacity = "2";
+				hp.style.opacity = "2";
+				hs.style.opacity = "0";
+				seoul.style.opacity = "2";
+				ten.style.opacity = "0";
+				hiseoul.style.opacity = "2";
+				hiparis.style.opacity = "0";
+				hiuk.style.opacity = "0";
+				hiusa.style.opacity = "0";
+			
+				}
+		</script>
+</body>
+</html>
