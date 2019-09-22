@@ -4,6 +4,7 @@
 	<title>Let's switch the country!</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
+
 		<style type="text/css">
 			#myimg {position: absolute; top: 200px; margin-left: 400px; z-index: 998;}
 			#hand {position: absolute; top: 250px; margin-left: 170px; z-index: 999;}
@@ -23,8 +24,8 @@
 			#seoul{position: absolute; opacity: 0; top: 380px; margin-left: 500px; border-radius: 50%; display: inline-block;  width: 450px}
 
 			p {font-family: 'Roboto Mono', monospace; font-size: 15pt; color: white; text-align: center; font-style: bold;}
-			#sen { margin-top: 120px;}
-			#ten { margin-top: 120px; opacity: 0;}
+			#sen { margin-top: 100px;}
+			#ten { margin-top: 100px; opacity: 0;}
 			#hiseoul { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
 			#hiuk { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
 			#hiusa { margin-top: -100px; padding-left: 600px; opacity: 0; position: absolute;}
@@ -41,7 +42,7 @@
 </head>
 
 <body id="mybody">
-	<p id="sen">Click This Globe</p>
+	<p id="sen">1st. Click This Globe<br><br>2nd. Click This Hand</p>
 	<img src="globe2.gif" id="myimg">
 	<img src="hand.gif" id="hand">
 	<img src="zigu.gif" id="z9">
@@ -63,8 +64,9 @@
 	<img src="paris.gif" id="paris">
 	<img src="seoul.gif" id="seoul">
 
-	<audio id="mysound" loop="true" autoplay="true">
-  	<source src="spinning.mp3" type="audio/mpeg">
+
+	<audio id="mysound" loop >
+  	<source src="spin.mp3" type="audio/mpeg">
 	</audio>
 
 	<audio id="air" loop="true">
@@ -73,6 +75,12 @@
 
 		<script type="text/javascript">
 			myimg.onclick = function(){
+				mysound.play();
+			}
+		</script>
+
+		<script type="text/javascript">
+			hand.onclick = function(){
 				myimg.style.opacity = "0";
 				myimg.style.zIndex = "0";
 				mybody.style.background = "url('zigu.gif')";
@@ -190,5 +198,4 @@
 				}
 		</script>
 
-</body>
 </html>
